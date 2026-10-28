@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: YOUR_DOCKERHUB_USER/demo-web:latest
+        image: demo-web:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
